@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Pesca - Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Incluye Font Awesome -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Enlaza tu archivo CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Pacifico&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <a href="../index.html">
+                <img id="logo" src="./assets/imag/logo.avif" alt="Logo de Guía de Pesca Leandro">
+            </a>
+            
+            <header>
+                <h1>Guía de Pesca Camba</h1>
+
+                <a href="#" class="responsive-btn">Menú</a>
+                
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="quienesosmos.html">Quiénes Somos</a></li>
+                        <div class="desplegable">
+                            <button class="b-desplegable">Torneos</button>
+                            <div class="desplegable-content">
+                                <a href="http://www.goyasurubi.com/index/" target="_blank">Concurso Surubí Goya</a>
+                                <a href="https://surubi.com/" target="_blank">Concurso Surubí Reconquista</a>
+                                <a href="https://festivalesargentina.com/fiesta-nacional-de-la-pesca-del-amarillo/" target="_blank">Concurso Amarillo Helvecia</a>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para reservas y consultas, por favor complete el siguiente formulario:</p>
+            
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+        <footer>
+            <!-- Agrega íconos para WhatsApp, Facebook e Instagram con enlaces -->
+            <div class="redes-sociales">
+                <a href="https://api.whatsapp.com/send?phone=543413393923" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/camba.ranchada" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/TUUSUARIODEINSTAGRAM/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <hr> &copy; 2023 Guía de Pesca. Todos los derechos reservados.</hr>
+        </footer>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

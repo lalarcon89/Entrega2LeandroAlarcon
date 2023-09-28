@@ -1,0 +1,375 @@
+html, body  {
+    font-size: 70%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 233, 235);
+}
+
+/* Estilos para encabezado*/
+header {
+    color: #ffffff;
+    padding: 1px 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+
+iframe {
+     max-width: 100%;
+}
+
+.main {
+    padding-top: 110px;
+    padding-bottom: 70px;
+}
+
+.header {
+    background-color: #1c62ad;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#logo {
+    max-width:max-content; /* Ancho máximo del logo */
+    float: left; /* Posiciona el logo a la derecha */
+    max-height: 110px; /* Establece una altura máxima para el logo (ajusta según sea necesario) */
+    margin-left: 0px; /* Espacio entre el logo y el texto (ajusta según sea necesario) */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 120px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+nav ul li a, 
+.b-desplegable {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:normal ;
+}
+
+/* Estilo del botón */
+.b-desplegable {
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+/* Estilos para las secciones */
+section {
+    max-width: 110%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #eeeaea;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos para los íconos de redes sociales */
+li {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #0e0a5a;
+    font-size: 18px;
+}
+
+section p{
+    font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ebeaf0;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #0e0a5a;
+    font-size: 28px;
+}
+
+h3 {
+    color: #133185;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+p {
+    color: rgb(16, 11, 77);
+    font-size: 10px;
+}
+
+#imagenRio{
+    display: flex;
+    width: 100%;
+    max-height: 550px;
+    height: auto;
+    border: 1px solid rgb(46, 27, 214);
+}
+
+/**
+* Galería de imágenes
+* 
+* display: grid; crea una grilla
+* grid-template-columns setea la cantidad de columnas por fila
+* grid-gap setea un margen entre celda y celda
+*/
+.imagenes-servicio {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+}
+
+.imagenes-servicio.largo {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/**
+* Imágenes de fondo
+* 
+* background-position: center; Las imágenes se colocan al centro del contenedor
+* background-size: cover;   Las imágenes se estiran hasta ocupar la totalidad del contenedor
+*                           Puede que partes de la imágen no se muestren, pero no se deforma
+* background-repeat: no-repeat; Evita que las imágenes se repitan para intentar cubrir el espacio sobrante
+*/
+.imagenes-servicio .imagenes {
+    width: 100%;
+    height: 140px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-container{
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+}
+
+#careaga{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #0e0a5a;
+    font-size: 22px;
+}
+
+#contacto {
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 450px;
+    background-color: #f4f4f4;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 5 9px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background-color: #2967aa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0e0a5a;
+}
+
+
+
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del contenido desplegable */
+.desplegable-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 12px;
+}
+
+/* Estilo de los enlaces dentro del contenido desplegable */
+.desplegable-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambiar el color del enlace al pasar el ratón por encima */
+.desplegable-content a:hover {
+    background-color: #12819c;
+}
+
+/* Mostrar el contenido desplegable cuando el botón se haga hover */
+.desplegable:hover .desplegable-content {
+    display: block;
+}
+
+/* Estilos para los comentarios (visualización solamente) */
+section#quienes_somos .comentario {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section#quienes_somos .comentario p {
+    margin: 0;
+}
+
+section#quienes_somos .comentario .nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.responsive-btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 980px) {    
+    .imagenes-servicio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .imagenes-servicio.largo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .responsive-btn {
+        display: block;
+    }
+
+    .header nav {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        background: #fff;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+
+    .header nav.abierto{
+        max-height: 1000px;
+        box-shadow: -1px 4px 8px 1px rgba(0,0,0,0.5);
+        -webkit-box-shadow: -1px 4px 8px 1px rgba(0,0,0,0.5);
+        -moz-box-shadow: -1px 4px 8px 1px rgba(0,0,0,0.5);
+    }
+
+    .header nav a, 
+    .header nav button {
+        color: #000;
+    }
+
+    .header nav ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header nav ul li, 
+    .header nav .desplegable {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        border-bottom: solid 1px rgb(227 227 227);
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .header nav .desplegable-content {
+        display: block;
+        position: relative;
+        background-color: transparent;
+        box-shadow: inherit;
+    }
+}
+
+@media screen and (max-width: 767px) {    
+    .imagenes-servicio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .imagenes-servicio.largo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
