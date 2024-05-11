@@ -12,3 +12,4 @@
         btn.addEventListener('click', toggleMenu);
     });
 })();
+
